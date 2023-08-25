@@ -169,9 +169,21 @@ h4 {
     cursor: pointer;
 }
 
+.menu-icon {
+    width: 25px;
+    margin-right: 15px;
+    display: none;
+}
 
 /* Media Query */
 
-@media (win-width: 700px) {
+@media (max-width: 760px) {
     
+   #menu-list {
+    display: none;
+   }
+
+   .menu-icon {
+    display: block;
+   }
 }
