@@ -180,10 +180,19 @@ h4 {
 @media (max-width: 760px) {
     
    #menu-list {
-    display: none;
+    position: relative;
+    top: 60px;
+    left: 60px;
+    overflow: hidden;
    }
 
    .menu-icon {
     display: block;
+   }
+
+   .nav-li {
+    display: block;
+    margin-top: 5px;
+
    }
 }
