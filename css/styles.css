@@ -179,6 +179,12 @@ h4 {
 
 @media (max-width: 760px) {
     
+    .container {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;    
+    }
+
    #menu-list {
     position: relative;
     top: 60px;
