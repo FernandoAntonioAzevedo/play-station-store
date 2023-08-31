@@ -118,6 +118,25 @@ h4 {
     cursor: pointer;
     background: linear-gradient(to right, #fb5283, #ff3527);
     z-index: 2;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.buy img {
+    width: 30px;
+    display: none;
+}
+
+.buy:hover {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+}
+
+.buy:hover img {
+    display: block;
 }
 
 .column-2 {
@@ -130,6 +149,7 @@ h4 {
 .controller {
     width: 90%;
     z-index: 2;
+    animation: moveController 2s infinite alternate ease-in-out;
 }
 
 .color-box {
@@ -203,11 +223,13 @@ h4 {
     position: relative;
     top: 60px;
     left: 60px;
-    overflow: hidden;
+    overflow: hidden;    
+    transition: all 0.8s ease-in-out;
    }
 
    .menu-icon {
     display: block;
+    cursor: pointer;
    }
 
    .nav-li {
@@ -215,4 +237,11 @@ h4 {
     margin-top: 5px;
 
    }
+}
+
+
+@keyframes moveController {
+    from {
+        transform: translate(-5%, -5%) rotate(-5deg);
+    }
 }
